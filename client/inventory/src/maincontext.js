@@ -153,10 +153,12 @@ export default function MainContextProvider({children}){
             const product = await result.data;
             console.log(product);
 
+            getProduct();
+
           } else {
             // Handle errors based on the status
             console.error(`Error: ${response.status} - ${response.statusText}`);
-            
+
           }
 
 
@@ -222,7 +224,7 @@ export default function MainContextProvider({children}){
 
    useEffect(()=>{
       getProduct();
-   },[])
+   },[updateState])
    
 
    return(
