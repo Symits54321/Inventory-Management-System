@@ -4,13 +4,14 @@
   "description": "An nodejs API to handle  add,update,delete,read operation of the products along with supplier info,mfg date,etc.",
   "main": "index.js",
   "scripts": {
+    "start":"nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sumit Singh",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-     
-    "mongoose": "^8.0.4"
+    "mongoose": "^8.0.4",
+    "nodemon": "^3.0.2"
   }
 }

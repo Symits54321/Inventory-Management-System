@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 // defining mongoose.connect -- through async function main()
 async function main(){
-    let url = 'mongodb://localhost:27017/inventory_management_database';  // localhost database
+    let url = 'mongodb://127.0.0.1:27017/inventory_management_database';  // localhost database
      await mongoose.connect(`${url}`);                                     // connecting function
 }
 

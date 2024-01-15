@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 // product schema
 const productSchema = new mongoose.Schema( {
 
-   product_name:{
+   name:{
 
         type:String,
         required:true
@@ -17,30 +17,30 @@ const productSchema = new mongoose.Schema( {
 
    },
 
-   product_desc:{
-
-        type:String,
-        required:false
-
-   },
-
-   Supplier_info:{
+   desc:{
 
         type:String,
         required:true
 
    },
 
-   mfg_date:{
+   supplier:{
 
-        type:Date,
+        type:String,
+        required:true
+
+   },
+
+   mfg:{
+
+        type:String,
         required:true
 
    },
    
-   exp_date:{
+   exp:{
 
-        type:Date,
+        type:String,
         required:true
 
     },
@@ -48,7 +48,7 @@ const productSchema = new mongoose.Schema( {
    quantity:{
 
         type:Number,
-        required:false
+        required:true
 
    }
 
@@ -61,3 +61,5 @@ const productSchema = new mongoose.Schema( {
 
 // making model mongoose.model('modelname/collection',schema);
 const productmodel = mongoose.model('products', productSchema);
+
+module.exports=productmodel;
