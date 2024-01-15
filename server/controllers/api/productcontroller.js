@@ -26,6 +26,7 @@ module.exports.getAll = async function (req, res) {
   
             return res.status(200).json({                        // not found
               message: 'No products / please create a product',
+              data:[]
               
             });
   
@@ -107,6 +108,7 @@ module.exports.search = async function (req, res) {
 
           return res.status(200).json({                        // not found
             message: 'No such product found',
+            data:[]
             
           });
 
@@ -165,6 +167,7 @@ module.exports.create = async function (req, res) {
                    return res.status(200).json({
                            
                      message: "Failed to create the product",
+                     data:[]
 
                    });
                }
@@ -218,7 +221,7 @@ module.exports.update=async function(req,res){
               
               res.status(500).json({
                 message: `product not found matching id= ${productId}`,
-             
+                
               });
             }
 

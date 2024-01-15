@@ -1,0 +1,115 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+
+.mainbox{
+    min-height: 100vh;
+    height: max-content;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 15px ;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:30px 10px;
+    transform: scale(0.8);
+   
+}
+
+.item{
+   grid-area: 8/2;
+   width:120px;
+   margin-left: auto;
+   padding: 5px 8px;
+   font-size: 0.9rem;
+   border:none;
+   border-radius: 7px;
+   background-image:radial-gradient(rgb(236, 235, 255),rgb(252, 186, 62));
+   box-shadow: 0px 0px 3px 3px grey;
+   text-decoration: none;
+   color:black;
+}
+
+
+input{
+   
+    border: none;
+    height: 30px;
+    text-indent: 10px;
+    border-radius: 6px;
+
+}
+
+input:focus{
+    border: none;
+    outline: none;
+   
+ }   
+
+
+ 
+ label{
+   display: flex;
+   align-items: center;
+   font-weight: 100;
+   color: rgb(255, 255, 255);
+   background-image: radial-gradient(rgb(103, 20, 20),transparent,);
+   padding:3px 10px;
+   /* text-shadow: 2px 2px 3px rgb(255, 255, 255); */
+ }
+
+
+
+
+form{
+    background-color: rgb(68, 43, 131);
+    padding: 45px 20px;
+    font-size:1rem ;
+    border-radius: 1rem;
+}
+
+.heading{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background-image: radial-gradient(white,transparent);
+    padding: 10px;
+}
+
+@media screen and (max-width:1050px){
+    .gridcontainer{
+        transform: scale(1);
+      }
+}
+
+@media screen and (max-width:750px){
+  main{
+    background-position: left;
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .gridcontainer{
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width:550px){
+    main{
+      background-position: left;
+      height: 100vh;
+      justify-content: flex-start;
+      align-items: center;
+    }
+}
