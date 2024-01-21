@@ -1,12 +1,15 @@
 Hi welcome to Inventory Management System
-This file contains two folder server and client. Server folder contains Node.js server files for backend communication through API 
-while Client/inventory contains a react app which will be using this API for CRUD operation. So for correct operation you need to open two terminal one is server and anothe client/inventory
+This file contains two folder server and client. Server folder contains Node.js server files whict acts as backend and can be communicated through API 
+while Client/inventory folder contains a react app which acts as frontend and sends API request  for CRUD operation and displays beautifully. So for correct operation you need to open two terminal one is server and anothe client/inventory and run corresponding funstions to start them. The instructions  are given below
 
 
 
 DOCS :
 
 (a)Server :- 
+
+         // First Install
+         .......\server> npm install
 
          // to start the server
            .........\server> npm start
@@ -31,17 +34,22 @@ DOCS :
 
 
 
-(b) client :-
+(b) Client :-
 
+         // First Install
+         .......\client\inventory> npm install
+         
+         // Start React App
         .............\client\inventory> npm start
 
         React app will get open soon with link http://localhost:3000    
 
-        1) Nav section contains two buttons one is the logo itself for Home and another is product button for Product page
+        1) Nav section contains two buttons one is the logo itself for Home and another is product button to open Product page
 
-        2) Main section in homepage is the Inventory Product form to create products
+        2) Below Nav there is Main section which contains Inventory Product form to create products
 
-        3) on clicking Product button , a list of products appear , each list has delete and Update button
+        3) After creating the products, click on the Product button in nav , product page will open and a list of products appear , each list has delete and Update button.
+           Delete button deletes the product and update button redirects to update page to update the product details.
 
       Note  :- server must be on for  succesfull operation
 
