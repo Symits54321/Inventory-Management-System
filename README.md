@@ -1,8 +1,16 @@
 MERN Project
 
-Hi welcome to Inventory Management System
-This file contains two folder server and client. Server folder contains Node.js server files which acts as backend and can be communicated through API 
-while Client/inventory folder contains a react app which acts as frontend and sends API request  for CRUD operation and displays beautifully. So for correct operation you need to open two terminal one is server and anothe client/inventory and run corresponding funstions to start them. The instructions  are given below
+Hi , Welcome to Inventory Management System.
+
+This file contains two folder server and client. 
+
+Server folder contains Node.js server files which acts as backend and can be communicated through API. 
+
+Client/inventory folder contains a React app which acts as frontend and sends API request  for CRUD operation and displays beautifully. 
+
+So for correct operation you need to open two terminal, one for server and another for client/inventory and run corresponding functions to start them.
+
+The instructions to start are given below
 
 
 
@@ -53,7 +61,7 @@ DOCS :
         3) After creating the products, click on the Product button in nav , product page will open and a list of products appear , each list has delete and Update button.
            Delete button deletes the product and update button redirects to update page to update the product details.
 
-      Note  :- server must be on for  succesfull operation
+      Note  :- Server must be on for  succesfull operation requested by frontend. 
 
       
               
