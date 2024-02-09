@@ -1,7 +1,7 @@
 MERN Project
 
 Hi welcome to Inventory Management System
-This file contains two folder server and client. Server folder contains Node.js server files whict acts as backend and can be communicated through API 
+This file contains two folder server and client. Server folder contains Node.js server files which acts as backend and can be communicated through API 
 while Client/inventory folder contains a react app which acts as frontend and sends API request  for CRUD operation and displays beautifully. So for correct operation you need to open two terminal one is server and anothe client/inventory and run corresponding funstions to start them. The instructions  are given below
 
 
