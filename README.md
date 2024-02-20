@@ -5,7 +5,8 @@ Welcome to the Inventory Management System! This project is built using the MERN
 
 ![Homepage](./screenshots/Homepage.JPG)
 
-## Demo
+
+## Demo of CRUD operation in App
 [Watch Demo on YouTube](https://youtu.be/p90kZwRzoWA)
 
 
@@ -15,16 +16,19 @@ Welcome to the Inventory Management System! This project is built using the MERN
 2. Run `npm install` to install dependencies.
 - ![Server Installation](./screenshots/Installating%20server.JPG)
 
+
 ### Starting the Server
 - Start the server by running `npm start`.
 - Upon successful start, you'll see the message:
 - ![Server Running](./screenshots/Server%20running%20succesfull.JPG)
+
 
 ### Endpoints
 - **Create a Product:** `POST /products/create`
 - **Get All Products:** `GET /products/get`
 - **Update a Product:** `PUT /products/update/<_id>`
 - **Delete a Product:** `DELETE /products/delete/<_id>`
+
 
 ## Client Setup
 ### Installation
@@ -36,6 +40,7 @@ Welcome to the Inventory Management System! This project is built using the MERN
 - Start the React app by running `npm start`.
 - The app will open in your default browser at http://localhost:3000.
 
+
 ## Usage
 1. Use the navigation buttons to access different sections:
  - **Home:** Click on the logo.
@@ -45,7 +50,10 @@ Welcome to the Inventory Management System! This project is built using the MERN
  -   ![Product Page](./screenshots/ProductPage.JPG)
 
 2. On the Product page, you can perform CRUD operations on products.
+3. [Click to watch the demo](https://youtu.be/p90kZwRzoWA)
+
+
 
 ## Notes
-- Ensure that the server is running for successful frontend operations.
+- Ensure that the server is running for successful frontend communication to backend server for CRUD operations .
 - Make sure your MongoDB service is running properly on your operating system.![Mongo server running](./screenshots/MongoDB%20server%20running.JPG)
