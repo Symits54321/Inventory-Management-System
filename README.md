@@ -1,69 +1,42 @@
-MERN Project
+# Inventory Management System (MERN Project)
 
-Hi , Welcome to Inventory Management System.
+## Demo
+[Watch Demo on YouTube](https://youtu.be/p90kZwRzoWA)
 
-This file contains two folder server and client. 
+## Introduction
+Welcome to the Inventory Management System! This project is built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to manage inventory by performing CRUD (Create, Read, Update, Delete) operations on products.
 
-Server folder contains Node.js server files which acts as backend and can be communicated through API. 
+## Server Setup
+### Installation
+1. Navigate to the `server` directory.
+2. Run `npm install` to install dependencies.
 
-Client/inventory folder contains a React app which acts as frontend and sends API request  for CRUD operation and displays beautifully. 
+### Starting the Server
+- Start the server by running `npm start`.
+- Upon successful start, you'll see the message:
+//SCR
 
-So for correct operation you need to open two terminal, one for server and another for client/inventory and run corresponding functions to start them.
+### Endpoints
+- **Create a Product:** `POST /products/create`
+- **Get All Products:** `GET /products/get`
+- **Update a Product:** `PUT /products/update/<_id>`
+- **Delete a Product:** `DELETE /products/delete/<_id>`
 
-The instructions to start are given below
+## Client Setup
+### Installation
+1. Navigate to the `client/inventory` directory.
+2. Run `npm install` to install dependencies.
 
+### Starting the React App
+- Start the React app by running `npm start`.
+- The app will open in your default browser at http://localhost:3000.
 
+## Usage
+1. Use the navigation buttons to access different sections:
+ - **Home:** Click on the logo.
+ - **Products:** Click on the "Product" button.
+2. On the Product page, you can perform CRUD operations on products.
 
-DOCS :
-
-(a)Server :- 
-
-         // First Install
-         .......\server> npm install
-
-         // to start the server
-           .........\server> npm start
-
-        // then you will get succesfull setup message as :-
-
-         Inventory Management System is Listening to port:8100
-         Succesfully connected to the database
-
-
-         1) to create
-        // http://localhost:8100/products/create/?name=<name>&price=<price>&desc=<description>}&supplier=<supplier info>&mfg=<mfg date>&exp=<exp date>&quantity=<quantity>
-
-         2) to get all products         
-        // http://localhost:8100/products/get
-
-         3) to update        
-        // http://localhost:8100/products/update/<_id>/?quantity=78&price=40
-        
-         4) to delete
-        // http://localhost:8100/products/delete/<_id>
-
-
-
-(b) Client :-
-
-         // First Install
-         .......\client\inventory> npm install
-         
-         // Start React App
-        .............\client\inventory> npm start
-
-        React app will get open soon with link http://localhost:3000    
-
-        1) Nav section contains two buttons one is the logo itself for Home and another is product button to open Product page
-
-        2) Below Nav there is Main section which contains Inventory Product form to create products
-
-        3) After creating the products, click on the Product button in nav , product page will open and a list of products appear , each list has delete and Update button.
-           Delete button deletes the product and update button redirects to update page to update the product details.
-
-      Note  :- Server must be on for  succesfull operation requested by frontend. 
-
-      
-              
-
-       
+## Notes
+- Ensure that the server is running for successful frontend operations.
+- Make sure your MongoDB service is running properly on your operating system.
