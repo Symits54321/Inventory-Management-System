@@ -3,19 +3,14 @@ import style from './Navbar.module.css';
 import { useEffect } from 'react';
 
 
-
 import { useMainValue } from '../../maincontext';
-
-
-
-
 
 import { NavLink, Link, Outlet } from "react-router-dom";
 
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+
+import Alert from '../Alert/Alert';
 
 
 function Navbar(){
@@ -39,12 +34,16 @@ function Navbar(){
 
     return(
       <>
+     
         <header> 
 
+          {/* ALERT Component  */}
+              <Alert/>
+
           {/*  Buy-Busy Logo */}
-        <Link to={``} className={style.logos}>
-           Inventory Management System
-         </Link>
+            <Link to={``} className={style.logos}>
+              Inventory Management System
+            </Link>
 
         
 

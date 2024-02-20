@@ -7,13 +7,14 @@ import Navbar from "./component/navbar/Navbar";
 import InventoryForm from "./component/inventoryform/InventoryForm";
 import ProductView from "./component/product/productview/ProductView";
 
+
 function App() {
 
   const browserRouter = createBrowserRouter([
 
     {
       path: "/",
-      element: <Navbar/>, 
+      element: <><Navbar/></>, 
       children: [
 
         { path: "", element: <><InventoryForm /></> ,},  

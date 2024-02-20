@@ -3,6 +3,7 @@ import style from "./InventoryForm.module.css";
 
 import { useNavigate } from "react-router-dom";
 
+
 function InventoryForm(){
 
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ function InventoryForm(){
 const { name,price,desc,supplier,mfg,exp,quantity,idUpdate,
     setName,setPrice,setDesc,setSupplier,setMfg,setExp,setQuantity,
     addProduct,getProduct,updateProduct,deleteProduct,
-    updateState
+    updateState,message,setMessage
      } = useMainValue();
 
 
@@ -38,7 +39,7 @@ const { name,price,desc,supplier,mfg,exp,quantity,idUpdate,
 
         <main className={style.mainbox} style={divImag}> 
         <h3 className={style.heading}>Inventory Product Form</h3>
-
+        
         <form onSubmit={handleSubmit} className={style.gridcontainer}>
           
            <label>Product Name</label>

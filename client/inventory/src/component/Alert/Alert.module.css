@@ -20,14 +20,15 @@
     
     box-shadow: 1px 1px 12px 3px #2b8beb;
     border-radius:4px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.3em;
+    font-family: sans-serif;
+    font-size: 1em;
     font-weight: 600;
     letter-spacing: 0.15em;
+    font-style: italic;
   
     position: absolute;
     
-    top:45px;
+    top:65px;
 }
 
 .alertAnimation{
@@ -47,7 +48,7 @@
 
     .alertheading{
         padding:10px 15px;
-        font-size: 1em;
+        font-size: 0.8em;
         top:35vh;
         box-shadow: 0px 0px 100px 55px rgb(93, 91, 91);
         border-radius: 20px;

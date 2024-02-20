@@ -12,7 +12,7 @@ export const mainContext = createContext();
 
 export default function MainContextProvider({children}){
 
-    
+    const[message,setMessage]= useState('Welcome to Inventory Management System')
   
 
    const[prodData,setprodData] = useState([]);
@@ -52,13 +52,17 @@ export default function MainContextProvider({children}){
             console.log(result.message);
             const product = await result.data;
             console.log(product);
+            setMessage('Product Added succesfully, Go to products page ');
+            getProduct();
 
           } else {
             // Handle errors based on the status
             console.error(`Error: ${response.status} - ${response.statusText}`);
+            setMessage('Error in adding products');
+
           }
 
-
+          
 
     
        
@@ -92,18 +96,21 @@ export default function MainContextProvider({children}){
         console.log(products);
         // adding product in state;
         setprodData(products);
+       // setMessage('Welcome to IMS and you are connected to server ');
+
        
       } catch (error) {
         console.error('Error getting product data:', error);
+        setMessage('Error in fetching products');
+
       } finally {
         // Any cleanup or additional logic
       }
    }
 
 
-   //update
 
-
+  // Update initialising (redirecting to update page )
    const updateInit = async(id) => {
        
     const filteredData = prodData.filter((x) => x._id === id);
@@ -123,7 +130,7 @@ export default function MainContextProvider({children}){
             setUpdateState(true);
           } 
 
-
+          setMessage('Fill the Update form ');
       setUpdateState(true);
       setIdUpdate(id);
      
@@ -132,7 +139,7 @@ export default function MainContextProvider({children}){
 
    }
 
-
+   // Update (in update form in homepage)
    const updateProduct = async(id) => {
  
     
@@ -155,6 +162,8 @@ export default function MainContextProvider({children}){
 
             getProduct();
 
+            setMessage('Product Updated Succesfully');
+
           } else {
             // Handle errors based on the status
             console.error(`Error: ${response.status} - ${response.statusText}`);
@@ -170,6 +179,8 @@ export default function MainContextProvider({children}){
        
       } catch (error) {
         console.error('Error updating product data:', error);
+        setMessage('Error updating product data');
+
       } finally {
         // Any cleanup or additional logic
         
@@ -205,6 +216,7 @@ export default function MainContextProvider({children}){
 
         const result = await response.json();    
           console.log(result.message);
+          setMessage('Product Deleted Succesfully');
 
           getProduct();
         }
@@ -214,6 +226,8 @@ export default function MainContextProvider({children}){
        
       } catch (error) {
         console.error('Error deleting product data:', error);
+        setMessage('Error in deleting the product');
+
       } finally {
         // Any cleanup or additional logic
       }
@@ -232,7 +246,7 @@ export default function MainContextProvider({children}){
         {prodData,updateState,setUpdateState,idUpdate,
             name,price,desc,supplier,mfg,exp,quantity,
             setName,setPrice,setDesc,setSupplier,setMfg,setExp,setQuantity,
-        addProduct,getProduct,updateProduct,updateInit,deleteProduct}
+        addProduct,getProduct,updateProduct,updateInit,deleteProduct,message,setMessage}
         }>
       {children}
     </mainContext.Provider>

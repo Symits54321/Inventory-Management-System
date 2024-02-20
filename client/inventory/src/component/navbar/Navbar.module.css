@@ -26,11 +26,17 @@ header {
     font-family: sans-serif;
     font-style: italic;
     /* border: 1px solid black;*/
-    border-radius: 7px; 
+    border-radius: 4px; 
     box-shadow: 0px 0px 3px 1px rgb(232, 230, 230);
-    padding:6px 12px;
+    padding:8px 12px;
     text-decoration: none;
-    
+ 
+     background-color: #723fb5;
+}
+
+.logos:hover{
+      background-color: #161899;
+
 }
 
 .navbtncontainer{
@@ -47,24 +53,29 @@ header {
 .navbtn{
     min-width:35px;
     width:auto;
-     height:26px;
+     height:35px;
      border:none;
-     border-radius: 6px 6px 6px 6px ;
+     /* border-radius: 6px 6px 6px 6px ; */
      text-decoration: none !important;
      display: flex;
      justify-content: center;
      gap:3px;
      align-items: center;
-     padding: 2px 8px;
+     padding: 5px 12px;
      background-color:transparent;
      font-size: 0.8rem;
      color:white;
+     border-bottom: 2px solid white;
+}
+
+.navbtn:hover{
+    background-color: #161899;
 }
 
 .navicon{
 
-    font-size: 0.9rem;
-    transform: translateY(-0.15rem);
+    font-size: 1em;
+    transform: translateY(-0.1em);
 }
 
 .navbtn::hover{

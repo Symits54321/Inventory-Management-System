@@ -2,7 +2,7 @@ import React from 'react';
 import { useState , useEffect } from 'react';
 import style from './Alert.module.css';
 
-import { useMainValue } from '../../Main.context';
+import { useMainValue } from '../../maincontext';
 
 
 function Alert(){
