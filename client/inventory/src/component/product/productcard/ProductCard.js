@@ -32,8 +32,11 @@ function ProductCard({ name,id,price,desc,supplier,mfg,exp,quantity}){
               <li>Quantity:- {quantity}</li>           
            </ul>
            <div className={style.prodbtn}>
-               <button onClick={()=>deleteProduct(id)}>Delete</button>
-               <button onClick={()=>update(id)}>Update</button>
+            {/* delete btn  */}
+           <button onClick={() => deleteProduct(id)} style={{backgroundColor: 'red'}}>Delete</button>
+            {/* update btn  */}
+           <button onClick={() => update(id)} style={{backgroundColor: 'blue'}}>Update</button>
+
            </div>
       </div>
     );

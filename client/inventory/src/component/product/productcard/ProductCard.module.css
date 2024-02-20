@@ -1,7 +1,8 @@
+
 .prodcardcontainer{
     border:1px solid blue;
     min-width: 30vw;
-    padding: 15px;
+    padding: 15px 28px;
     background-image:linear-gradient(-90deg,rgb(117, 117, 80),orange);
     border-radius: 4px;
     flex-grow: 0.7;
@@ -20,7 +21,21 @@
 
 .prodbtn>button{
 
-    
+    padding:9px 12px;
+    font-weight: 600;
+    color:white;
+    border:none;
+    border-radius: 5px;
+  
+}
+
+.prodbtn>button:hover{
+    box-shadow: 0px 0px 8px 3px rgb(32, 52, 20);
+}
+
+
+button:active{
+    box-shadow:none;
 }
 
 
