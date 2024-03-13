@@ -1,9 +1,12 @@
 # Inventory Management System (MERN Project)
 
+
+![Homepage](./screenshots/Homepage.JPG)
+
+
 ## Introduction
 Welcome to the Inventory Management System! This project is built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to manage inventory by performing CRUD (Create, Read, Update, Delete) operations on products.
 
-![Homepage](./screenshots/Homepage.JPG)
 
 
 ## Demo of CRUD operation in App
