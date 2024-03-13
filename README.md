@@ -27,9 +27,9 @@ Welcome to the Inventory Management System! This project is built using the MERN
 
 
 ### Endpoints
-- **Create a Product:** `POST /products/create`
+- **Create a Product:** `POST /products/create?name=<name>&price=<price>&desc=<description>&supplier=<supplier name>&mfg=<mfg date>&exp=<exp date>&quantity=<quantity>`
 - **Get All Products:** `GET /products/get`
-- **Update a Product:** `PUT /products/update/<_id>`
+- **Update a Product:** `PUT /products/update/<_id>/?name=<name>&price=<price>&desc=<description>&supplier=<supplier name>&mfg=<mfg date>&exp=<exp date>&quantity=<quantity>`
 - **Delete a Product:** `DELETE /products/delete/<_id>`
 
 
